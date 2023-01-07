@@ -1,58 +1,885 @@
-{
-  "Post": {
-    "_": {
-      "items": 10
-    },
-    "cover": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
-    },
-    "title": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
-      }
-    },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
-      }
-    },
-    "tag": {
-      "string": [
-        "one",
-        "two",
-        "three"
-      ]
-    },
-    "isDraft": {
-      "boolean": {}
-    },
-    "createdAt": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    },
-    "comments": {
-      "hasMany": "Comment"
-    }
-  },
-  "Comment": {
-    "_": {
-      "items": 25
-    },
-    "email": {
-      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
-    },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
-      }
-    },
-    "post": {
-      "belongsTo": "Post"
-    }
-  }
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingReleaseOracleNCRMResult xmlns="http://ecosys.net/api/FundingReleaseOracleNCRM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://ecosys.net/api/FundingReleaseOracleNCRM https://crowncastle-dev.ecosys.net/ecosys/api/xsd/FundingReleaseOracleNCRM" successFlag="true">
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300013_01_01</CostObject>
+        <UCC>7010101</UCC>
+        <OracleResourceName>Outside Plant-7010101</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>03</ControlAccountID>
+        <Name>Makeready</Name>
+        <CostObject>S300012_01_03</CostObject>
+        <UCC>7030301</UCC>
+        <OracleResourceName>Outside Plant-7030301</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300012_01_01</CostObject>
+        <UCC>7010101</UCC>
+        <OracleResourceName>Outside Plant-7010101</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060612</UCC>
+        <OracleResourceName>Outside Plant-7060612</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300012_01_01</CostObject>
+        <UCC>7010102</UCC>
+        <OracleResourceName>ISP-Building Access-7010102</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300013_01_01</CostObject>
+        <UCC>7010103</UCC>
+        <OracleResourceName>ISP-Building Access-7010103</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>4000</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060601</UCC>
+        <OracleResourceName>Outside Plant-7060601</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>8000</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300013_01_01</CostObject>
+        <UCC>7010102</UCC>
+        <OracleResourceName>ISP-Building Access-7010102</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060603</UCC>
+        <OracleResourceName>Outside Plant-7060603</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060615</UCC>
+        <OracleResourceName>Outside Plant-7060615</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300013_01_01</CostObject>
+        <UCC>7010104</UCC>
+        <OracleResourceName>Outside Plant-7010104</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060611</UCC>
+        <OracleResourceName>Outside Plant-7060611</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060604</UCC>
+        <OracleResourceName>Outside Plant-7060604</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300012_01_01</CostObject>
+        <UCC>7010104</UCC>
+        <OracleResourceName>Outside Plant-7010104</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300012_01_01</CostObject>
+        <UCC>7010103</UCC>
+        <OracleResourceName>ISP-Building Access-7010103</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>4000</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060613</UCC>
+        <OracleResourceName>Outside Plant-7060613</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060601</UCC>
+        <OracleResourceName>Outside Plant-7060601</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>8000</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>03</ControlAccountID>
+        <Name>Makeready</Name>
+        <CostObject>S300012_01_03</CostObject>
+        <UCC>7030302</UCC>
+        <OracleResourceName>Outside Plant-7030302</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060602</UCC>
+        <OracleResourceName>Outside Plant-7060602</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060614</UCC>
+        <OracleResourceName>Outside Plant-7060614</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>03</ControlAccountID>
+        <Name>Makeready</Name>
+        <CostObject>S300011_01_03</CostObject>
+        <UCC>7030301</UCC>
+        <OracleResourceName>Outside Plant-7030301</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.410Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.41</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>03</ControlAccountID>
+        <Name>Makeready</Name>
+        <CostObject>S300011_01_03</CostObject>
+        <UCC>7030302</UCC>
+        <OracleResourceName>Outside Plant-7030302</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.410Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.41</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300011_01_01</CostObject>
+        <UCC>7010103</UCC>
+        <OracleResourceName>ISP-Building Access-7010103</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>4000</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.410Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.41</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060612</UCC>
+        <OracleResourceName>Outside Plant-7060612</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060608</UCC>
+        <OracleResourceName>Outside Plant-7060608</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300011_01_01</CostObject>
+        <UCC>7010102</UCC>
+        <OracleResourceName>ISP-Building Access-7010102</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.410Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.41</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060609</UCC>
+        <OracleResourceName>Outside Plant-7060609</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060614</UCC>
+        <OracleResourceName>Outside Plant-7060614</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060610</UCC>
+        <OracleResourceName>Outside Plant-7060610</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060602</UCC>
+        <OracleResourceName>Outside Plant-7060602</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060601</UCC>
+        <OracleResourceName>Outside Plant-7060601</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>8000</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300011_01_01</CostObject>
+        <UCC>7010104</UCC>
+        <OracleResourceName>Outside Plant-7010104</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.410Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.41</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060611</UCC>
+        <OracleResourceName>Outside Plant-7060611</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060613</UCC>
+        <OracleResourceName>Outside Plant-7060613</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060603</UCC>
+        <OracleResourceName>Outside Plant-7060603</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060604</UCC>
+        <OracleResourceName>Outside Plant-7060604</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060602</UCC>
+        <OracleResourceName>Outside Plant-7060602</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060605</UCC>
+        <OracleResourceName>Outside Plant-7060605</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060606</UCC>
+        <OracleResourceName>Outside Plant-7060606</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060607</UCC>
+        <OracleResourceName>Outside Plant-7060607</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060608</UCC>
+        <OracleResourceName>Outside Plant-7060608</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060612</UCC>
+        <OracleResourceName>Outside Plant-7060612</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>03</ControlAccountID>
+        <Name>Makeready</Name>
+        <CostObject>S300013_01_03</CostObject>
+        <UCC>7030302</UCC>
+        <OracleResourceName>Outside Plant-7030302</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060607</UCC>
+        <OracleResourceName>Outside Plant-7060607</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060607</UCC>
+        <OracleResourceName>Outside Plant-7060607</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060613</UCC>
+        <OracleResourceName>Outside Plant-7060613</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>03</ControlAccountID>
+        <Name>Makeready</Name>
+        <CostObject>S300013_01_03</CostObject>
+        <UCC>7030301</UCC>
+        <OracleResourceName>Outside Plant-7030301</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060608</UCC>
+        <OracleResourceName>Outside Plant-7060608</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060610</UCC>
+        <OracleResourceName>Outside Plant-7060610</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060614</UCC>
+        <OracleResourceName>Outside Plant-7060614</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060605</UCC>
+        <OracleResourceName>Outside Plant-7060605</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060609</UCC>
+        <OracleResourceName>Outside Plant-7060609</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300013</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300013_01_06</CostObject>
+        <UCC>7060615</UCC>
+        <OracleResourceName>Outside Plant-7060615</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.417Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.417</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060606</UCC>
+        <OracleResourceName>Outside Plant-7060606</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060604</UCC>
+        <OracleResourceName>Outside Plant-7060604</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060611</UCC>
+        <OracleResourceName>Outside Plant-7060611</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060615</UCC>
+        <OracleResourceName>Outside Plant-7060615</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060603</UCC>
+        <OracleResourceName>Outside Plant-7060603</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>01</ControlAccountID>
+        <Name>Design</Name>
+        <CostObject>S300011_01_01</CostObject>
+        <UCC>7010101</UCC>
+        <OracleResourceName>Outside Plant-7010101</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.410Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.41</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060606</UCC>
+        <OracleResourceName>Outside Plant-7060606</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060609</UCC>
+        <OracleResourceName>Outside Plant-7060609</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300012</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300012_01_06</CostObject>
+        <UCC>7060605</UCC>
+        <OracleResourceName>Outside Plant-7060605</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+    <FundingReleaseOracleNCRM>
+        <ProjectID>S300011</ProjectID>
+        <ControlAccountID>06</ControlAccountID>
+        <Name>Fiber Construction</Name>
+        <CostObject>S300011_01_06</CostObject>
+        <UCC>7060610</UCC>
+        <OracleResourceName>Outside Plant-7060610</OracleResourceName>
+        <FundingCheckTemplate>CFSCA</FundingCheckTemplate>
+        <FundingRelease>0</FundingRelease>
+        <CreateDate>2022-12-22T21:57:51.350Z</CreateDate>
+        <LastUpdateDate>2022-12-22T21:58:15.413Z</LastUpdateDate>
+        <CreateDateTimeStamp>12/22/22 21:57:51.35</CreateDateTimeStamp>
+        <LastUpdateDateTimeStamp>12/22/22 21:58:15.413</LastUpdateDateTimeStamp>
+    </FundingReleaseOracleNCRM>
+</FundingReleaseOracleNCRMResult>
